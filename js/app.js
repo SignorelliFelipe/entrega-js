@@ -232,4 +232,24 @@ function mostrarBestiario(){
     activarBotonesEnemigos();
 }
 
+function activarBotonesEnemigos(){
+    document.querySelectorAll(".botonEnemigo").forEach(btn=>{
+        btn.addEventListener("click", (e)=>{
+            let index = e.target.dataset.index;
+            Swal.fire("👹 Enemigo seleccionado", enemigos[index].nombre);
+        });
+    });
+}
+
+function abrirBestiario(){
+    document.getElementById("popupBestiario").style.display = "flex";
+}
+
+document.getElementById("botonBestiario").addEventListener("click", abrirBestiario);
+document.getElementById("botonBestiarioImg").addEventListener("click", abrirBestiario);
+
+document.getElementById("cerrarBestiario").addEventListener("click", ()=>{
+    document.getElementById("popupBestiario").style.display = "none";
+});
+
 mostrarPersonajes();

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
+<body>
+
 <header class="header">
     <div class="header-contenido">
         <h1 class="logo">⚔️ RPG Creator</h1>
@@ -17,9 +19,8 @@
         </nav>
     </div>
 </header>
-<body>
 
-<h1>Creador de personajes RPG</h1>
+<h1 id="inicio">Creador de personajes RPG</h1>
 
 <div class="formulario">
     <input type="text" id="nombre" placeholder="Nombre del personaje">
@@ -38,20 +39,20 @@
 
 <h2 id="resultadoPelea"></h2>
 
+<!-- BOTÓN LIBRO -->
+<img src="./img/libro.jpg" id="botonBestiario">
 
-<img src="./img/libro.jpg" id="botonBestiarioImg">
-
-
+<!-- POPUP BESTIARIO -->
 <div id="popupBestiario">
     <div class="contenidoBestiario">
-        <h2>Bestiario</h2>
+        <h2>📖 Bestiario</h2>
         <div id="bestiario"></div>
         <button id="cerrarBestiario">Cerrar</button>
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 <script src="./js/app.js"></script>
+
 </body>
 </html>
