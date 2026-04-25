@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador RPG</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<header class="header">
+    <div class="header-contenido">
+        <h1 class="logo">⚔️ RPG Creator</h1>
+
+        <nav class="nav">
+            <button id="btnInicio">Inicio</button>
+            <button id="btnParty">Party</button>
+            <button id="botonBestiario">📖 Bestiario</button>
+        </nav>
+    </div>
+</header>
+<body>
+
+<h1>Creador de personajes RPG</h1>
+
+<div class="formulario">
+    <input type="text" id="nombre" placeholder="Nombre del personaje">
+
+    <select id="clase">
+        <option value="Guerrero">Guerrero</option>
+        <option value="Mago">Mago</option>
+        <option value="Arquero">Arquero</option>
+    </select>
+
+    <button id="crearPersonaje">Crear personaje</button>
+</div>
+
+<h2>Tu Party</h2>
+<div id="resultado"></div>
+
+<h2 id="resultadoPelea"></h2>
+
+
+<img src="./img/libro.jpg" id="botonBestiarioImg">
+
+
+<div id="popupBestiario">
+    <div class="contenidoBestiario">
+        <h2>Bestiario</h2>
+        <div id="bestiario"></div>
+        <button id="cerrarBestiario">Cerrar</button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="./js/app.js"></script>
+</body>
+</html>

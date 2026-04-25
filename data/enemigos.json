@@ -1,0 +1,5 @@
+[
+  {"nombre":"Goblin","vida":60,"ataque":12,"imagen":"./img/goblin.jpg"},
+  {"nombre":"Orco","vida":90,"ataque":18,"imagen":"./img/orco.jpg"},
+  {"nombre":"Dragón","vida":150,"ataque":30,"imagen":"./img/dragon.jpg"}
+]
